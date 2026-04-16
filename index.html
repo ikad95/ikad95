@@ -5,109 +5,143 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CodexVault — an open archive for the AI era</title>
 <meta name="description" content="An open archive for the AI era. Free to read. Free to publish. Outside the permission economy.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f2e9'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='36' fill='%23131210'%3EC%3C/text%3E%3C/svg%3E">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f2e9'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia' font-size='40' fill='%237a1d19' font-style='italic'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="topbar">
-  <span class="brand">CodexVault</span>
-  <span class="dot">·</span>
-  <span class="url">codexvault.org</span>
-  <span class="spacer"></span>
-  <a href="#archive" class="nav-link">the archive</a>
-  <a href="#publish" class="nav-link">publish</a>
+<header class="mast">
+  <div class="mast-inner">
+    <span class="mast-title">CodexVault</span>
+    <span class="mast-sub">&mdash;&nbsp;an open archive for the AI era</span>
+    <span class="mast-date">MMXXVI</span>
+  </div>
+  <div class="mast-rule" aria-hidden="true"></div>
+  <div class="mast-underrule" aria-hidden="true"></div>
 </header>
 
 <main>
 
 <section class="hero">
-  <h1>
-    <span>A Renaissance</span>
-    <span>does not start</span>
-    <span>when permission</span>
-    <span>is granted<span class="period">.</span></span>
-  </h1>
-  <p class="hero-sub">
-    It starts when enough people stop asking for it.
-  </p>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1>
+        <span>A Renaissance</span>
+        <span>does not start</span>
+        <span>when permission</span>
+        <span>is granted<span class="period">.</span></span>
+      </h1>
+      <p class="hero-sub">It starts when enough people stop asking for it.</p>
+    </div>
+
+    <aside class="hero-specimen">
+      <p class="specimen-label">Specimen codex &mdash; the first</p>
+      <div class="codex-card">
+        <div class="codex-meta">
+          <span>Codex</span>
+          <span class="kb">·</span>
+          <span>CDX&ndash;00001</span>
+        </div>
+        <dl class="codex-fields">
+          <dt>title</dt>   <dd>The structure of knowledge after the press</dd>
+          <dt>author</dt>  <dd>did:vault:0x8a&hellip;f41c</dd>
+          <dt>version</dt> <dd>v0.3.1 &mdash; mutable, signed, replayable</dd>
+          <dt>format</dt>  <dd>prose + code + data + proofs</dd>
+          <dt>license</dt> <dd>open &mdash; no permission required</dd>
+          <dt>graph</dt>   <dd>47 inbound &middot; 12 outbound</dd>
+        </dl>
+        <p class="codex-foot">signed &middot; content-addressed &middot; forkable</p>
+      </div>
+    </aside>
+  </div>
+
   <p class="hero-mark">
     <strong>CodexVault</strong> is an open archive for the AI era. Free to read. Free to publish.
     Outside the permission economy that has governed knowledge for four hundred years.
   </p>
 </section>
 
-<section class="essay">
-  <h2 class="kicker">On the end of the paper</h2>
+<div class="ornament" aria-hidden="true"><span>◆</span><span>·</span><span>◆</span></div>
+
+<article class="essay">
+  <header class="essay-head">
+    <span class="folio">§&nbsp;I</span>
+    <h2 class="kicker">On the end of the paper</h2>
+  </header>
 
   <p class="drop">For four centuries, the paper was how we kept what we learned. It was a printing-press artifact &mdash; a fixed document, stamped, shelved, cited, forgotten. The form made sense when the press was the only copyist. It persisted because the rails around it calcified into institutions.</p>
 
-  <p>We now live inside machines that can read the corpus in seconds. The paper persists anyway. The gatekeeping around it has only grown more elaborate &mdash; <span class="num">$11,200</span> to go open-access in a top journal, <span class="num">six to eighteen months</span> for a single review cycle, <span class="num">a third</span> of preprints that never graduate. Meanwhile the ideas that matter most travel through blogs, threads, and decks that nobody thought to certify.</p>
+  <p>We now live inside machines that can read the corpus in seconds. The paper persists anyway. The gatekeeping around it has only grown more elaborate <span class="margin" data-note="avg. cost, open-access, top journals"><span class="num">$11,200</span></span> to go open-access in a top journal, <span class="margin" data-note="per review cycle"><span class="num">six to eighteen months</span></span> for a single review cycle, <span class="margin" data-note="of all preprints"><span class="num">a third</span></span> of preprints that never graduate. Meanwhile the ideas that matter most travel through blogs, threads, and decks that nobody thought to certify.</p>
 
   <p>Gutenberg did not invent literacy. He removed the friction between the mind and the page. The Renaissance was what followed. Our friction today is not mechanical. It is institutional &mdash; editors, reviewers, impact factors, the labor of asking &mdash; and it is, at last, optional. The machines can read. The networks can carry. What we need is a new press.</p>
 
   <p class="pull">So we are building one.</p>
-</section>
+</article>
 
-<hr class="rule">
+<div class="ornament" aria-hidden="true"><span>◆</span><span>·</span><span>◆</span></div>
 
-<section id="archive" class="essay">
-  <h2 class="kicker">What a codex is</h2>
+<article id="archive" class="essay">
+  <header class="essay-head">
+    <span class="folio">§&nbsp;II</span>
+    <h2 class="kicker">What a codex is</h2>
+  </header>
 
   <p>A codex is what a paper becomes when you strip away the gatekeepers. Anyone can author one. Nobody charges to read one. It is written in structured markdown, with prose, code, data, and proofs as first-class citizens. It carries a cryptographic signature in place of an institutional affiliation &mdash; the signature <em>is</em> the credential. It is content-addressed, so references cannot rot. It is versioned, so ideas evolve without being silently rewritten.</p>
 
   <p>When you publish, the archive keeps what you wrote. Not what an editor allowed to remain.</p>
+</article>
 
-  <aside class="codex-card">
-    <div class="codex-meta">
-      <span>Codex</span>
-      <span class="kb">·</span>
-      <span>CDX&ndash;00001</span>
-    </div>
-    <dl class="codex-fields">
-      <dt>title</dt>   <dd>The structure of knowledge after the press</dd>
-      <dt>author</dt>  <dd>did:vault:0x8a&hellip;f41c</dd>
-      <dt>version</dt> <dd>v0.3.1 &mdash; mutable, signed, replayable</dd>
-      <dt>format</dt>  <dd>prose + code + data + proofs</dd>
-      <dt>license</dt> <dd>open &mdash; no permission required</dd>
-      <dt>graph</dt>   <dd>47 inbound references &middot; 12 outbound</dd>
-    </dl>
-    <p class="codex-foot">signed &middot; content-addressed &middot; forkable</p>
-  </aside>
-</section>
+<div class="ornament" aria-hidden="true"><span>◆</span><span>·</span><span>◆</span></div>
 
-<hr class="rule">
+<article class="essay">
+  <header class="essay-head">
+    <span class="folio">§&nbsp;III</span>
+    <h2 class="kicker">The lines we hold</h2>
+  </header>
 
-<section class="essay">
-  <h2 class="kicker">The lines we hold</h2>
-
-  <p><em>Free, always.</em> Readers pay nothing. No tier will exist above this line.</p>
-  <p><em>Permissionless, always.</em> No affiliation, no editor, no vote. The archive is an act of writing, not of being chosen.</p>
-  <p><em>Permanent by design.</em> A codex published is a codex kept. Content-addressed, redundantly stored, beyond any single authority's reach.</p>
-  <p><em>Unruled.</em> We do not curate truth. We publish provenance, context, and the tools to reason. What the reader adjudicates, the archive does not.</p>
+  <div class="creed">
+    <p><em>Free, always.</em> Readers pay nothing. No tier will exist above this line.</p>
+    <p><em>Permissionless, always.</em> No affiliation, no editor, no vote. The archive is an act of writing, not of being chosen.</p>
+    <p><em>Permanent by design.</em> A codex published is a codex kept. Content-addressed, redundantly stored, beyond any single authority's reach.</p>
+    <p><em>Unruled.</em> We do not curate truth. We publish provenance, context, and the tools to reason. What the reader adjudicates, the archive does not.</p>
+  </div>
 
   <p class="post">Curation is where most open archives go to die. The filter begins reasonable and ends the product. We will not install that filter. The hard boundary is only what is illegal under applicable law; beyond that, the archive does not take sides on what may be known.</p>
-</section>
+</article>
 
-<hr class="rule">
+<div class="ornament" aria-hidden="true"><span>◆</span><span>·</span><span>◆</span></div>
 
-<section id="publish" class="essay">
-  <h2 class="kicker">How to publish</h2>
+<article id="publish" class="essay">
+  <header class="essay-head">
+    <span class="folio">§&nbsp;IV</span>
+    <h2 class="kicker">How to publish</h2>
+  </header>
 
   <p>You write a codex in structured markdown. You sign it with a key you hold. The archive replicates it, content-addressed, to every node CodexVault reaches. The graph absorbs it. Other codexes now cite you, or fork you, or challenge you &mdash; and those are codexes too. Nothing is retracted. Everything stays legible.</p>
 
   <p>The archive grows the way knowledge actually does: by accretion, not by approval.</p>
-</section>
+</article>
 
-<hr class="rule">
+<div class="ornament" aria-hidden="true"><span>◆</span><span>·</span><span>◆</span></div>
 
-<section class="essay">
-  <h2 class="kicker">Where this goes</h2>
+<article class="essay">
+  <header class="essay-head">
+    <span class="folio">§&nbsp;V</span>
+    <h2 class="kicker">Where this goes</h2>
+  </header>
 
-  <p><em>Now &rarr; six months.</em> The format spec, the reference writer, the reader, the first hundred codexes. Cryptographic identity in, PDFs out.</p>
-  <p><em>Six to eighteen.</em> A live graph of references, forks, and challenges. An agent API. The first institutional mirrors.</p>
-  <p><em>After that.</em> Distributed storage federated across independent nodes. Opt-in endorsement layers for those who want them, ignored by those who do not. Enough gravity that writing to CodexVault stops feeling like a statement and starts feeling like the default.</p>
-</section>
+  <dl class="horizon">
+    <dt>Now <span class="arr">&rarr;</span> six months</dt>
+    <dd>The format spec, the reference writer, the reader, the first hundred codexes. Cryptographic identity in, PDFs out.</dd>
+
+    <dt>Six <span class="arr">&rarr;</span> eighteen</dt>
+    <dd>A live graph of references, forks, and challenges. An agent API. The first institutional mirrors.</dd>
+
+    <dt>After that</dt>
+    <dd>Distributed storage federated across independent nodes. Opt-in endorsement layers for those who want them, ignored by those who do not. Enough gravity that writing to CodexVault stops feeling like a statement and starts feeling like the default.</dd>
+  </dl>
+</article>
 
 <section class="closer">
   <p class="closer-text">
@@ -119,6 +153,7 @@
 </main>
 
 <footer class="foot">
+  <div class="foot-rule" aria-hidden="true"></div>
   <div class="foot-row">
     <span>CodexVault</span>
     <span>codexvault.org</span>
