@@ -1,0 +1,12 @@
+{
+  "name": "CodexVault",
+  "version": "0.1.0",
+  "stability": "draft",
+  "url": "https://codexvault.org",
+  "rule": "https://codexvault.org/rule.json",
+  "human": "https://codexvault.org/rule",
+  "feed": "https://codexvault.org/feed.atom",
+  "sitemap": "https://codexvault.org/sitemap.xml",
+  "license": "CC0-1.0",
+  "agents_welcomed": true
+}

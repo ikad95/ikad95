@@ -103,12 +103,22 @@ a:hover { background-size: 100% 1px; color: var(--accent); }
   color: var(--ink-mute);
   letter-spacing: 0.01em;
 }
-.mast-date {
+.mast-link {
   margin-left: auto;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-mute);
+  background-image: none;
+  padding-bottom: 0;
+}
+.mast-link:hover { color: var(--accent); }
+.mast-date {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.22em;
   color: var(--ink-mute);
+  margin-left: 14px;
 }
 .mast-rule, .mast-underrule {
   max-width: var(--wide);
